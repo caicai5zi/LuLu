@@ -133,14 +133,15 @@ bail:
     
     //step 2: validate
     // check that client is signed with Objective-See's dev cert and it's the LuLu installer
-    if(0 != SecTaskValidateForRequirement(taskRef, (__bridge CFStringRef)(requirementString)))
-    {
-        //err msg
-        logMsg(LOG_ERR, [NSString stringWithFormat:@"failed to validated against %@", requirementString]);
-        
-        //bail
-        goto bail;
-    }
+    //不做验证
+//    if(0 != SecTaskValidateForRequirement(taskRef, (__bridge CFStringRef)(requirementString)))
+//    {
+//        //err msg
+//        logMsg(LOG_ERR, [NSString stringWithFormat:@"failed to validated against %@", requirementString]);
+//
+//        //bail
+//        goto bail;
+//    }
 
     //set the interface that the exported object implements
     newConnection.exportedInterface = [NSXPCInterface interfaceWithProtocol:@protocol(XPCProtocol)];

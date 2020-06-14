@@ -18,7 +18,7 @@
 #define CONF_SCRIPT @"configure.sh"
 
 //signing auth
-#define SIGNING_AUTH @"Developer ID Application: Objective-See, LLC (VBG97UB4TA)"
+#define SIGNING_AUTH @"Apple Development: 972008514@qq.com (DK8DU26S32)"
 
 //dispatch source for SIGTERM
 dispatch_source_t dispatchSource = nil;

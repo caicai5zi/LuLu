@@ -264,12 +264,11 @@
 				TargetAttributes = {
 					7D7755CF1F02DF9500D0017D = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = VBG97UB4TA;
-						ProvisioningStyle = Manual;
+						ProvisioningStyle = Automatic;
 					};
 					CD32C21C20900D36009CADF6 = {
 						CreatedOnToolsVersion = 9.2;
-						ProvisioningStyle = Manual;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -451,8 +450,9 @@
 		7D7755D81F02DF9500D0017D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "Developer ID Application";
-				DEVELOPMENT_TEAM = VBG97UB4TA;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KQH95MYAPA;
 				ENABLE_HARDENED_RUNTIME = YES;
 				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/../Carthage/Build/Mac";
 				LIBRARY_SEARCH_PATHS = (
@@ -463,7 +463,8 @@
 				OTHER_CODE_SIGN_FLAGS = "-o hard,kill,library";
 				OTHER_LDFLAGS = "-Wl,-sectcreate,__RESTRICT,__restrict,/dev/null";
 				PRODUCT_NAME = LuLu;
-				SDKROOT = macosx10.14;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
@@ -471,8 +472,9 @@
 		7D7755D91F02DF9500D0017D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "Developer ID Application";
-				DEVELOPMENT_TEAM = VBG97UB4TA;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KQH95MYAPA;
 				ENABLE_HARDENED_RUNTIME = YES;
 				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/../Carthage/Build/Mac";
 				LIBRARY_SEARCH_PATHS = (
@@ -483,7 +485,8 @@
 				OTHER_CODE_SIGN_FLAGS = "-o hard,kill,library";
 				OTHER_LDFLAGS = "-Wl,-sectcreate,__RESTRICT,__restrict,/dev/null";
 				PRODUCT_NAME = LuLu;
-				SDKROOT = macosx10.14;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
@@ -494,11 +497,11 @@
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CODE_SIGN_IDENTITY = "Developer ID Application";
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1.2.3;
-				DEVELOPMENT_TEAM = VBG97UB4TA;
+				DEVELOPMENT_TEAM = KQH95MYAPA;
 				ENABLE_HARDENED_RUNTIME = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = launchDaemonBundle/Info.plist;
@@ -510,7 +513,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.objective-see.lulu.bundle";
 				PRODUCT_NAME = LuLu;
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SDKROOT = macosx10.14;
+				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				WRAPPER_EXTENSION = bundle;
 			};
@@ -522,11 +525,11 @@
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CODE_SIGN_IDENTITY = "Developer ID Application";
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1.2.3;
-				DEVELOPMENT_TEAM = VBG97UB4TA;
+				DEVELOPMENT_TEAM = KQH95MYAPA;
 				ENABLE_HARDENED_RUNTIME = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = launchDaemonBundle/Info.plist;
@@ -538,7 +541,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.objective-see.lulu.bundle";
 				PRODUCT_NAME = LuLu;
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SDKROOT = macosx10.14;
+				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				WRAPPER_EXTENSION = bundle;
 			};

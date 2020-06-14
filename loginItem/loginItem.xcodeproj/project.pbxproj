@@ -253,8 +253,7 @@
 				TargetAttributes = {
 					7D7755E21F02E05B00D0017D = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = VBG97UB4TA;
-						ProvisioningStyle = Manual;
+						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.Mac = {
 								enabled = 0;
@@ -459,10 +458,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "Developer ID Application";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1.2.2;
-				DEVELOPMENT_TEAM = VBG97UB4TA;
+				DEVELOPMENT_TEAM = KQH95MYAPA;
 				ENABLE_HARDENED_RUNTIME = YES;
 				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/../Carthage/Build/Mac";
 				INFOPLIST_FILE = loginItem/Info.plist;
@@ -474,7 +474,8 @@
 				OTHER_LDFLAGS = "-Wl,-sectcreate,__RESTRICT,__restrict,/dev/null";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.objective-see.lulu.helper";
 				PRODUCT_NAME = "LuLu Helper";
-				SDKROOT = macosx10.14;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				VALID_ARCHS = x86_64;
 			};
@@ -484,10 +485,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "Developer ID Application";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1.2.2;
-				DEVELOPMENT_TEAM = VBG97UB4TA;
+				DEVELOPMENT_TEAM = KQH95MYAPA;
 				ENABLE_HARDENED_RUNTIME = YES;
 				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/../Carthage/Build/Mac";
 				INFOPLIST_FILE = loginItem/Info.plist;
@@ -499,7 +501,8 @@
 				OTHER_LDFLAGS = "-Wl,-sectcreate,__RESTRICT,__restrict,/dev/null";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.objective-see.lulu.helper";
 				PRODUCT_NAME = "LuLu Helper";
-				SDKROOT = macosx10.14;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				VALID_ARCHS = x86_64;
 			};

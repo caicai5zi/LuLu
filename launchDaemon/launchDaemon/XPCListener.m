@@ -25,7 +25,7 @@
 #import "XPCDaemonProto.h"
 
 //signing auth
-#define SIGNING_AUTH @"Developer ID Application: Objective-See, LLC (VBG97UB4TA)"
+#define SIGNING_AUTH @"Apple Development: 972008514@qq.com (DK8DU26S32)"
 
 //interface for 'extension' to NSXPCConnection
 // ->allows us to access the 'private' auditToken iVar
@@ -165,12 +165,13 @@ bail:
     
     //step 2: validate
     // check that client is signed with Objective-See's and it's LuLu (main app or helper)
-    if( (0 != SecTaskValidateForRequirement(taskRef, (__bridge CFStringRef)(requirementStringApp))) &&
-        (0 != SecTaskValidateForRequirement(taskRef, (__bridge CFStringRef)(requirementStringHelper))) )
-    {
-        //bail
-        goto bail;
-    }
+    //不验证
+//    if( (0 != SecTaskValidateForRequirement(taskRef, (__bridge CFStringRef)(requirementStringApp))) &&
+//        (0 != SecTaskValidateForRequirement(taskRef, (__bridge CFStringRef)(requirementStringHelper))) )
+//    {
+//        //bail
+//        goto bail;
+//    }
     
     //set the interface that the exported object implements
     newConnection.exportedInterface = [NSXPCInterface interfaceWithProtocol:@protocol(XPCDaemonProtocol)];

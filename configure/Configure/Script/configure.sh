@@ -44,7 +44,7 @@ if [ "${1}" == "-install" ]; then
 
     #install kext
     chown -R root:wheel "LuLu.kext"
-    cp -R -f "LuLu.kext" /Library/Extensions/
+    cp -R -f "LuLu.kext"       
 
     echo "kext installed"
 

@@ -35,7 +35,7 @@
 #define CONFIG_HELPER_ID @"com.objective-see.lulu.configHelper"
 
 //signing auth
-#define SIGNING_AUTH @"Developer ID Application: Objective-See, LLC (VBG97UB4TA)"
+#define SIGNING_AUTH @"Apple Development: 972008514@qq.com (DK8DU26S32)"
 
 //firewall event: network out
 #define EVENT_NETWORK_OUT 0x0
